@@ -1292,3 +1292,31 @@ a {
   padding-left: 10px;
   padding-right: 10px;
 }
+.dice-logo__link svg {
+  fill: #ce0e2d;
+  max-height: 36px;
+  transition: fill .1s;
+  width: auto;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.dice-logo__link {
+  flex: 0 0 90px;
+  padding-top: 2px;
+  
+}
+
+@media screen and (max-width: 767px){
+.dice-logo__text, .dice-logo__text .dice-logo__text-brand {
+    display: none;
+}}

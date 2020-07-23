@@ -1,0 +1,51 @@
+@import (reference) '../../common_colours.less';
+@import (reference) '../../common_CSS3_mx.less';
+@import (reference) '../Vendor/bootstrap-media-queries.less';
+
+.dice-logo {
+    display: flex;
+    padding: 3px 0;
+
+    &__link {
+        flex: 0 0 90px;
+        padding-top: 2px;
+
+        &:hover {
+            svg {
+                fill: @colorRedDark;
+                transition: fill 100ms;
+            }
+        }
+
+        svg {
+            fill: @colorPrimary;
+            max-height: 36px;
+            transition: fill 100ms;
+            width: auto;
+        }
+    }
+
+    &__image {
+        display: inline-block;
+        vertical-align: baseline;
+    }
+
+    &__text {
+        .font-size(14);
+        color: @colorPrimary;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        justify-content: center;
+        padding-left: 20px;
+        text-transform: uppercase;
+
+        @media screen and (max-width: @screen-xs-max) {
+            display: none;
+
+            .dice-logo__text-brand {
+                display: none;
+            }
+        }
+    }
+}
