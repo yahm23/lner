@@ -1,4 +1,5 @@
 import React from 'react'
+import './lner.css'
 
 export default function Confirmation() {
     return (
@@ -40,8 +41,45 @@ export default function Confirmation() {
                         </div>
                     </div>
                 </div>
-            </header>            
-            
+            </header>
+
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
+            <div class="journey-details__summary">
+                <div class="fulfilment-itinerary">
+
+            <h2 class="fulfilment-itinerary__title">Your seat reservation(s) are confirmed</h2>
+            <p class="fulfilment-itinerary__text fulfilment-itinerary__text--intro">Your email confirmation is on its way to you.</p>
+            <div class="fulfilment-itinerary__text"><p>Your seat reservation(s):</p></div>
+
+                            
+
+
+    <div class="fulfilment-itinerary__details">
+        <p class="fulfilment-itinerary__text"><strong>Outbound</strong> Fri 24 Jul 20</p>
+
+        <p class="fulfilment-itinerary__text">
+            <strong>Durham (DHM)</strong> to
+            <strong>Newcastle (NCL)</strong>
+        </p>
+
+        <p class="fulfilment-itinerary__text">08:23 <span aria-hidden="true">&gt;</span><span class="visuallyhidden">to</span> 08:37</p>
+
+                    <p class="fulfilment-itinerary__text">
+                    1 Adult
+                            </p>
+
+
+            <span>Reservation Number: <strong>KV579752</strong></span>
+    </div>
+
+
+
+
+
+                        </div>            
+            </div>
+            </div>
         </div>
     )
 }
